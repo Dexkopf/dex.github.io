@@ -19,7 +19,7 @@ video {
   width: auto;
   height: auto;
   z-index: -2;
-  filter: blur(5px);
+  filter: blur(2px);
 }
 .landingPage {
   overflow: hidden;
