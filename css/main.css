@@ -7,6 +7,7 @@ body {
 }
 .row {
   position: relative;
+  display: flex;
 }
 h1,h2,h3,h4,h5 {
   font-weight: 800;
@@ -150,7 +151,10 @@ video {
 .travels .container {
   text-align: center;
 }
-
+.d-travels {
+  margin-left: 5px;
+  text-align: center;
+}
 /*
   Footer
 */
