@@ -39,11 +39,11 @@
     <div class="landingPageContent">
       <h1 class="h-white">Luke Ricica</h1>
       <ul>
-        <li><a href="#">About me</a></li>
-        <li><a href="#">Travels</a></li>
-        <li><a href="#">Work</a></li>
-        <li><a href="#">Case studies and blog</a></li>
-        <li><a href="#">Contact</a></li>
+        <li><a data-scroll href="#aboutMe">About me</a></li>
+        <li><a data-scroll href="#travels">Travels</a></li>
+        <li><a data-scroll href="#work">Work</a></li>
+        <li><a data-scroll href="#caseStudies">Case studies and blog</a></li>
+        <li><a data-scroll href="#contact">Contact</a></li>
       </ul>
     </div>
   </div>
@@ -55,7 +55,7 @@
     <div class="container">
       <div class="row">
         <div class="eight columns">
-          <h2 class="h-white">Designer & Developer</h2>
+          <h2 class="h-white" id="aboutMe">Designer & Developer</h2>
           <h3 class="h-white">With love for travels and great food</h3>
           <p class="p-aboutMe">
             Landjaeger pork loin frankfurter salami pastrami turducken turkey bacon bresaola. Alcatra leberkas venison flank andouille tail pork chop pastrami cow. T-bone ribeye pork chop pork loin, kevin salami jowl chicken alcatra corned beef.
@@ -64,10 +64,10 @@
             Landjaeger pork loin frankfurter salami pastrami turducken turkey bacon bresaola. Alcatra leberkas venison flank andouille tail pork chop pastrami cow. T-bone ribeye pork chop pork loin, kevin salami jowl chicken alcatra corned beef.
           </p>
           <h3 class="h-white">Interested in meaningful work?</h3>
-          <a href="#" class="button-white">Contact me</a>
+          <a data-scroll href="#contact" class="button-white">Contact me</a>
         </div>
         <div class="four columns">
-          <img src="" alt="Photo" />
+          <img src="images/headshot.png" alt="Photo" />
         </div>
       </div>
     </div>
@@ -78,7 +78,7 @@
 
   <div class="travels">
     <div class="container">
-      <h3 class="align-center">Travels</h3>
+      <h3 class="align-center" id="travels">Travels</h3>
       <hr>
       <p class="align-center">
         I love traveling. I´ve visited and worked in <span class="s-blue">UK, Austria, Serbia</span> and many more countries.
@@ -95,7 +95,7 @@
 
   <div class="work">
     <div class="container">
-      <h3 class="align-center">Work</h3>
+      <h3 id="work" class="align-center">Work</h3>
       <hr>
       <p class="align-center">
         I´ve worked on some <span class="s-blue">Front-end</span> projects. I´ve developed and done case study for every project I´ve done so far. I use many developer tools, but I can't live without <span class="s-blue">SASS, Grunt, Github, Skeleton</span>.
@@ -151,7 +151,7 @@
       <div class="row">
         <div class="one-half column">
           <div class="one-half column">
-            <h4>Case studies</h4>
+            <h4 id="caseStudies">Case studies</h4>
             <p>
               I love to do case studies. I think web without case study is like a car without wheels. Absurd.
             </p>
@@ -162,7 +162,7 @@
         </div>
         <div class="one-half column">
           <div class="one-half column">
-            <h4>Blog</h4>
+            <h4 id="blog">Blog</h4>
             <p>
               I write. I do. To be more honest - I try. Writing is something I respect and that is why I try to improve my writing skill.
             </p>
@@ -186,7 +186,7 @@
             Question, job offer or just want to say hello?
           </p>
           <h5 class="h-f">Feel free to contact me</h5>
-          <a href="mailto:info@lukericica.me" class="mail">info@lukericica.me</a>
+          <a href="mailto:info@lukericica.me" class="mail" id="contact">info@lukericica.me</a>
           <br>
           <div class="social">
             <a href="https://www.facebook.com/lukericica"><img src="images/facebook-logo.svg" alt="facebook" class="a-social"/></a>
@@ -196,7 +196,11 @@
       </div>
     </div>
   </footer>
-
+  <script type="text/javascript" src="js/smooth-scroll.js">
+  </script>
+  <script>
+    smoothScroll.init();
+  </script>
 
 <!-- End Document
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
